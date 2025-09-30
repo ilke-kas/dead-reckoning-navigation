@@ -1,0 +1,6 @@
+<launch>
+    <!-- Launch the dead reckoning node -->
+    <node pkg="stdr_dead_reckoning" type="talker_module.py" name="dead_reckoning_talker" output="screen">
+        <remap from="cmd_vel" to="/robot0/cmd_vel" />
+    </node>
+</launch>
